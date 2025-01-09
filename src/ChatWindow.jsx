@@ -3,7 +3,7 @@ import { IoIosArrowRoundBack } from "react-icons/io";
 
 const ChatWindow = ({ user }) => {
   return (
-    <div className="flex-1 bg-gray-900 text-white p-4 flex flex-col rounded-md">
+    <div className="flex-1 bg-black text-white pl-4 flex flex-col rounded-md">
       <div className="bg-zinc-600 p-3 rounded-md flex items-center justify-between">
         <div className="flex items-center">
           <img src={user.avatar} alt={user.name} className="rounded-full" />

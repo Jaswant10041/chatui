@@ -6,7 +6,7 @@ import { FaEdit } from "react-icons/fa";
 
 const Nav = () => {
   return (
-    <nav className="flex items-center pt-4 mx-auto justify-between px-8 lg:px-14 text-pink-200 bg-black shadow-lg">
+    <nav className="flex items-center pt-5 mx-auto justify-between  lg:px-14 text-pink-200 bg-black shadow-lg">
       <div className="flex items-center space-x-4">
         <a href="#" className="text-3xl font-extrabold hover:text-pink-300">
           Logo
@@ -25,7 +25,7 @@ const Nav = () => {
           <span className="ml-1">Edit</span>
         </a>
       </div>
-      <button className="border-2 text-black bg-pink-200 rounded-full px-7 py-2 hover:bg-pink-300">
+      <button className="border-2 text-black bg-pink-200 rounded-full px-12 py-2 hover:bg-pink-300">
         Login
       </button>
     </nav>

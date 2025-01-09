@@ -23,7 +23,7 @@ const ChatWindow = ({ user }) => {
           </div>
         </div>
       </div>
-      {/* Chat Messages */}
+      
       <div className="flex-1 bg-zinc-800 p-4 overflow-y-auto">
         {user.chats.map((chat) => (
           <div
@@ -31,7 +31,7 @@ const ChatWindow = ({ user }) => {
             className={`mb-4 flex ${
               chat.sender === "me" ? "justify-end" : "justify-start"
             }`}
-          >
+          ><img src={user.avatar} alt={user.name} width={50} className="rounded-full mr-2" />
             <div
               className={`p-3 rounded-lg max-w-xs ${
                 chat.sender === "me" ? "bg-pink-500 text-right" : "bg-gray-500"

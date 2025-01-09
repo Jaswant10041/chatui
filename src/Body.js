@@ -3,7 +3,16 @@ import ChatWindow from "./ChatWindow";
 import Sidebar from "./Sidebar";
 
 function Body() {
-  const [selectedUser, setSelectedUser] = useState(null);
+  const [selectedUser, setSelectedUser] = useState({
+    id: 1,
+    name: "Caressa Jessalin",
+    avatar: "https://via.placeholder.com/40",
+    chats: [
+      { id: 1, text: "Hello!", sender: "other" },
+      { id: 2, text: "Your order according to application?", sender: "other" },
+      { id: 3, text: "Yes, my order according to application. Thank you", sender: "me" },
+    ],
+  });
 
   const users = [
     {

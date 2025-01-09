@@ -3,18 +3,18 @@ import { IoIosArrowRoundBack } from "react-icons/io";
 
 const ChatWindow = ({ user }) => {
   return (
-    <div className="flex-1 bg-black text-white pl-4 flex flex-col rounded-md">
+    <div className="flex-1 pl-4 bg-black text-white flex flex-col rounded-md">
       <div className="bg-zinc-600 p-3 rounded-md flex items-center justify-between">
         <div className="flex items-center">
-          <img src={user.avatar} alt={user.name} className="rounded-full" />
+          <img src={user.avatar} alt={user.name} className="w-8 h-8 sm:w-12 sm:h-12 rounded-full" />
           <p className="ml-4 font-semibold">{user.name}</p>
         </div>
         <div className="flex items-center space-x-2">
-          <button className="flex items-center text-white px-2 py-1 rounded-md hover:bg-gray-300">
+          <button className="flex items-center text-white px-2 py-1 rounded-md">
             <IoIosArrowRoundBack />
             <span className="ml-2">Back</span>
           </button>
-          <button className="flex items-center  text-white px-2 py-1 rounded-md ">
+          <button className="flex items-center text-white px-2 py-1 rounded-md">
             <RiDeleteBinLine />
             <span className="ml-2">Delete</span>
           </button>
@@ -24,7 +24,7 @@ const ChatWindow = ({ user }) => {
       <div className="flex-1 bg-zinc-800 p-4 overflow-y-auto mt-2 rounded-md">
         {user.chats.map((chat) => (
           <div key={chat.id} className={`mb-4 flex ${chat.sender === "me" ? "justify-end" : "justify-start"}`}>
-            {chat.sender !== "me" && <img src={user.avatar} alt={user.name} className="rounded-full mr-2" />}
+            {chat.sender !== "me" && <img src={user.avatar} alt={user.name} className="w-8 h-8 sm:w-12 sm:h-12 rounded-full mr-2" />}
             <div className={`px-3 py-2 rounded-lg max-w-xs ${chat.sender === "me" ? "bg-pink-500" : "bg-gray-500"}`}>
               {chat.text}
             </div>

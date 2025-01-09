@@ -33,8 +33,8 @@ const ChatWindow = ({ user }) => {
             }`}
           ><img src={user.avatar} alt={user.name} width={50} className="rounded-full mr-2" />
             <div
-              className={`p-3 rounded-lg max-w-xs ${
-                chat.sender === "me" ? "bg-pink-500 text-right" : "bg-gray-500"
+              className={`pt-3 px-1 rounded-lg max-w-xs ${
+                chat.sender === "me" ? "bg-pink-500" : "bg-gray-500"
               }`}
             >
             
